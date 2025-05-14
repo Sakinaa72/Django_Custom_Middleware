@@ -51,10 +51,9 @@ App will run on: http://127.0.0.1:8000
 
 ### 1. Root Endpoint
 
-```bash
-http
-Copy code
 GET /
+
+```bash
 Description: Simple test route to verify middleware functionality.
 Authentication: ❌ No token or login required
 ```
@@ -62,16 +61,12 @@ Authentication: ❌ No token or login required
 ### ✅ Request:
 
 ```bash
-bash
-Copy code
 curl http://127.0.0.1:8000/
 ```
 
 ### ✅ Expected Response:
 
 ```bash
-json
-Copy code
 {
 "message": "Hello, World!"
 }
