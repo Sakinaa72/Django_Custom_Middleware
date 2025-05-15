@@ -48,9 +48,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
     # Custom Middleware
     'myapp.middleware.BlockSuspiciousUserAgentsMiddleware',
     'myapp.middleware.RequestLoggerMiddleware',
+    'myapp.middleware.ExecutionTimeLoggerMiddleware',
+    'myapp.middleware.BlockIPMiddleware',
+    'myapp.middleware.EnforceHTTPSMiddleware',
+    'myapp.middleware.CustomHeaderMiddleware',
 ]
 
 ROOT_URLCONF = 'Django_Custom_Middlware.urls'

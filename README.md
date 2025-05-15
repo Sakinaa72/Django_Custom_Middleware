@@ -15,6 +15,18 @@ This is a simple Django Project demonstrating the use of **custom middleware** f
 - **RequestLoggerMiddleware**  
   Logs the method and path of every incoming request for monitoring purposes.
 
+- **Execution Time Logger**
+  Measures and logs the time each request takes to process.
+
+- **Block IP Middleware**
+  Blocks requests from specific IP addresses.
+
+- **Enforce HTTPS**
+  Automatically redirects all HTTP traffic to HTTPS.
+
+- **Custom Header Middleware**
+  Adds custom headers (e.g., app version, developer name) to all responses.
+
 ## 🚀 Setup and Run
 
 ### 1. Clone the Repository
